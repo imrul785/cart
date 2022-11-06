@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cart 2</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js" integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js" integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk" crossorigin="anonymous"></script>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <nav>
+        <span class="cart-icon"><i class='bx bx-shopping-bag' ></i></span>
+        <span class="cart-count"><span class="count">0</span> Item in cart</span>
+    </nav>
+
+    <section class="product">
+        <div class="container" id="container-main">
+            <div class="row" id="container-main-row">
+                <div class="col-3">
+                    <div class="container-product-inner">
+                        <div class="product-info">
+                        <img src="image/product-10.jpg" alt="" class="product-img">
+                        
+                            <strong class="product-name">Simple Product 1</strong>
+                            <strong class="product-price">$42.06</strong>
+                            <button class="cart-btn">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-3">
+                    <div class="container-product-inner">
+                        <div class="product-info">
+                        <img src="image/product-11.jpg" alt="" class="product-img">
+                        
+                            <strong class="product-name">Simple Product 2</strong>
+                            <strong class="product-price">$55.25</strong>
+                            <button class="cart-btn">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="cart-table">
+        <table class="product-table">
+            <thead>
+                <tr>
+                    <td>Image</td>
+                    <td>Name</td>
+                    <td>Price</td>
+                    <td>Quantity</td>
+                    <td>Sub Total</td>
+                    <td>Remove</td>
+                </tr>
+            </thead>
+            <tbody class="cart-content">
+                <!-- <tr>
+                    <td><img src="image/product-10.jpg" alt="" class="cart-img"></td>
+                    <td><strong class="name">Simple Product 1</strong></td>
+                    <td><strong class="price">$22.06</strong></td>
+                    <td>
+                        <div class="qty">
+                            <i class='bx bx-minus decnum' ></i>
+                            <input type="text" name="qty" id="1" value="1" class="input-filed">
+                            <i class='bx bx-plus incnum' ></i>
+                        </div>
+                    </td>
+                    <td><strong class="subtotal">$00.00</strong></td>
+                    <td><span class="remove-btn"><i class='bx bx-x' ></i></span></td>
+                </tr>
+                <tr>
+                    <td><img src="image/product-11.jpg" alt="" class="cart-img"></td>
+                    <td><strong class="name">Simple Product 2</strong></td>
+                    <td><strong class="price">$15.25</strong></td>
+                    <td>
+                        <div class="qty">
+                            <i class='bx bx-minus decnum' ></i>
+                            <input type="text" name="qty" id="2" value="1" class="input-filed">
+                            <i class='bx bx-plus incnum' ></i>
+                        </div>
+                    </td>
+                    <td><strong class="subtotal">$00.00</strong></td>
+                    <td><span class="remove-btn"><i class='bx bx-x' ></i></span></td>
+                </tr> -->
+            </tbody>
+        </table>
+        <div class="container-total">
+            <div class="total-bx">
+                <!-- <div class="discount">
+                    <strong class="dis-details">discount</strong>
+                    <strong class="discount-amount">$00.00</strong>
+                </div>
+                <div class="delivery">
+                    <strong class="del-details">Delivery</strong>
+                    <strong class="delivery-amount">$00.00</strong>
+                </div> -->
+                <!-- <div class="border-top"></div> -->
+                <div class="total">
+                    
+                    <strong class="total-detail">Total</strong>
+                    <strong class="total-amount">$00.00</strong>
+                </div>
+                <button class="clear-cart">Clear Cart</button>
+                <button class="checkout">Check Out</button>
+            </div>
+        </div>
+
+        
+    </section>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
